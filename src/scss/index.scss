@@ -1,0 +1,15 @@
+// Base
+@use 'base/reset';
+@use 'base/base';
+@use 'base/fonts';
+@use 'base/typography';
+@use 'base/btn.scss';
+@use 'base/liliom-icons.scss';
+
+// // Components
+@use 'components/header';
+
+@import "custom";
+@import "~bootstrap/scss/bootstrap";
+@import "./vendor/slick.scss";
+@import "./vendor/animate.scss";

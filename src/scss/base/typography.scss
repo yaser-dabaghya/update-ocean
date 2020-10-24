@@ -1,0 +1,101 @@
+@use './variables' as *;
+
+body {
+  font-family: $paragraphs-font !important;
+  font-weight: 300 !important;
+  text-transform: none;
+  color: $paragraphs-color !important;
+}
+
+*::-webkit-input-placeholder {
+  font-family: $paragraphs-font;
+  color: $light-text;
+  font-size: 13px;
+  font-weight: normal;
+}
+
+*::selection {
+  background-color: $primary-color;
+  color: $light-text;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $headings-font;
+  font-weight: 600 !important;
+  color: $headings-color;
+  line-height: initial !important;
+}
+
+h2 {
+  font-size: 28px;
+}
+
+h3 {
+  font-size: 26px;
+  margin-bottom: 15px;
+}
+
+h4 {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+h5 {
+  font-size: 18px;
+  margin-bottom: 16px;
+}
+
+h6 {
+  font-size: 16px;
+  margin-bottom: 16px;
+}
+
+a {
+  color: $headings-color;
+
+  &:hover, &:active, &:focus {
+    color: $primary-color;
+    text-decoration: none ;
+  }
+}
+
+a, button, button span, .btn, .icon {
+  transition: all .3s ease;
+}
+
+.dark {
+  background-color: #151417!important;
+}
+
+.orange {
+  background: $warning-color !important;
+}
+
+.danger {
+  background-color: $danger-color!important;
+}
+.info {
+  background-color: #007bff!important;
+}
+.primary {
+  background-color: $primary-color!important;
+}
+
+.success {
+  background-color: $success-color!important;
+}
+
+.secondary {
+  background-color: $secondary-color!important;
+}
+
+.info-light {
+  background-color: #1ecdde!important;
+}
+
+
+.mt-xs {
+  @media (max-width: 768px) {
+    margin-top: 10px;
+}
+}

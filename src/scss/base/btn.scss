@@ -1,0 +1,38 @@
+@use './variables' as *;
+
+.btn {
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: .7rem 2rem !important;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 10rem !important;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,
+    border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+
+    &.btn-primary {
+        background-color: $primary-color;
+        border-color: $primary-color;
+		color: #fff;
+
+		&:hover, &:focus, &.active {
+			background-color: rgba($primary-color, .95) !important;
+			border-color: rgba($primary-color, .95) !important;
+		}
+    }
+    
+    &.btn-secondary {
+        background-color: $secondary-color;
+        border: $secondary-color;
+
+        &:hover, &:focus, &.active {
+			background-color: rgba($secondary-color, .95) !important;
+			border-color: rgba($secondary-color, .95) !important;
+		}
+    }
+}

@@ -1,0 +1,55 @@
+@use './variables' as *;
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.valign-wrapper {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+
+  @media (max-width: $grid-float-breakpoint) {
+    display: block;
+  }
+
+  .valign {
+    display: block;
+  }
+}
+
+.container {
+    &.lg {
+      @media screen and (min-width: 992px) { 
+        max-width: 1370px;
+    }
+    }
+}
+
+
+.section {
+  padding: 85px 0;
+  position: relative;
+
+  @media (max-width: 768px) {
+    padding: 15px 0;
+  }
+
+}
+
+.section-title {
+  margin: auto auto 90px;
+
+  h2 {
+    font-size: 50px;
+    line-height: 45px;
+    margin: auto auto 15px;
+    font-weight: 700;
+    max-width: 362px;
+    position: relative;
+  }
+}
