@@ -1,5 +1,6 @@
 /// javascript
 
+
 if ($('.project-carousel').length) {
     $(".project-carousel").slick({
     
@@ -55,4 +56,4 @@ if ($('.project-carousel').length) {
     });
 } 
 
-new WOW().init();
+
